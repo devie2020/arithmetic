@@ -9,3 +9,10 @@ nodes.forEach(node => {
 });
 
 console.log(JSON.stringify(binaryTree.get()));
+
+// 中序遍历二叉树 左 中 右
+binaryTree.inOrderTraverse(key => {
+	console.log(key);
+});
+
+// 前序遍历二叉树 中 左 右

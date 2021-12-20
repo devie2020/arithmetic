@@ -9,6 +9,14 @@ export function BinaryTree() {
 }
 
 /**
+ * 获取二叉树
+ * @returns Tree
+ */
+BinaryTree.prototype.get = function () {
+	return this.root;
+};
+
+/**
  * 插入节点的方法
  * @param {any} key
  */
@@ -37,6 +45,21 @@ BinaryTree.prototype.insert = function (key) {
 	}
 };
 
-BinaryTree.prototype.get = function () {
-	return this.root;
+BinaryTree.prototype.inOrderTraverse = function (callback) {
+	const inOrderTraverseNode = (node, callback) => {
+		if (node !== null) {
+			// 访问当前节点的左子树
+			if (node.left) {
+				inOrderTraverseNode(node.left, callback);
+			}
+			callback(node.key);
+
+			// 访问当前节点的右子树
+			if (node.right) {
+				inOrderTraverseNode(node.right, callback);
+			}
+		}
+	};
+
+	inOrderTraverseNode(this.root, callback);
 };
