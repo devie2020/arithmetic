@@ -23,4 +23,4 @@ binaryTree.inOrderTraverse(key => {
 // 	console.log(key);
 // });
 
-console.log('找到的节点：', binaryTree.remove(14));
+console.log('找到的节点：', binaryTree.remove(3));

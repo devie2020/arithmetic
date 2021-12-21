@@ -30,12 +30,12 @@ export function removeNode(node, key) {
 			return null;
 		}
 
-		// 没有左子节点, 返回右子节点
+		// 没有左节点, 返回右节点
 		if (left === null) {
 			return right;
 		}
 
-		// 没有右子节点，返货左子节点
+		// 没有右节点，返货左节点
 		if (right === null) {
 			return left;
 		}
