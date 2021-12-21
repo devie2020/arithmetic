@@ -1,2 +1,2 @@
-import { BinaryTree, Node } from './BinaryTree';
+import { BinaryTree, Node } from './BinaryTreeClass';
 export { BinaryTree, Node };
