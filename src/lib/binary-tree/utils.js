@@ -103,7 +103,7 @@ export function inOrderTraverseNode(node, callback) {
 }
 
 /**
- * 中序遍历，先遍历左子树，如果当前节点没有左子树，那么就打印当前节点，
+ * 前序遍历，先打印当前节点，然后遍历左子树，再遍历右子树，
  * 如果没有右子树，也就是叶子节点，那么返回父节点(执行栈控制)
  * @param {Node} node 当前节点
  * @param {Function} callback 回调函数，用来打印节点的值
@@ -124,7 +124,7 @@ export function prevOrderTraverseNode(node, callback) {
 }
 
 /**
- * 后序遍历，先遍历左子树，然后遍历右子树
+ * 后序遍历，先遍历左子树，然后遍历右子树，最后打印当前节点
  * 如果是叶子节点，那么打印当前节点，然后返回父节点(执行栈控制)
  * @param {Node} node 当前节点
  * @param {Function} callback 回调函数，用来打印节点的值
